@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--- Normalize CSS --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--  Font ROBOTO  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+    <!--  Global CSS  -->
+    <link rel="stylesheet" href="./assets/css/pokemon.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/pokedex.css">
+    <title>Pokedex</title>
+</head>
+<body id="inside-pokemon">
+    <section class="container grass" id="poke">
+        <div class="header">
+            <h1 class="name">Bulbasaur</h1>
+            <h3 class="number">#01</h3>
+            <ol class="types">
+                <li class="type grass">grass</li>
+                <li class="type poison">poison</li>
+             </ol>
+        </div>
+        <div class="photo">
+            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg" alt="">
+        </div>
+        <section class="base-stats">
+            <h1>Base Stats</h1>
+            <div class="stats">
+                <ul class="name-stats">
+                    <li>HP</li>
+                    <li>Attack</li>
+                    <li>Defense</li>
+                    <li>Sp.attack</li>
+                    <li>Sp.defense</li>
+                    <li>Speed</li>
+                </ul>
+                <ul class="number-stats">
+                    <li>45</li>
+                    <li>49</li>
+                    <li>49</li>
+                    <li>65</li>
+                    <li>65</li>
+                    <li>45</li>
+                </ul>
+                <ul class="bars-stats">
+                    <li>
+                        <div class="prograss-bar">
+                            <div style="width: 45%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="prograss-bar">
+                            <div style="width: 49%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="prograss-bar">
+                            <div style="width: 49%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="prograss-bar">
+                            <div style="width: 65%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="prograss-bar">
+                            <div style="width: 65%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="prograss-bar">
+                            <div style="width: 45%;"></div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="pagination">
+                <a href="index.html">
+                    <button id="loadMore" type="button">
+                        NEXT
+                    </button>
+                </a>
+            </div>
+        </section>
+
+    </section>
+
+
+
+
+    <script src="./assets/js/pokemon-model.js"></script>
+    <script src="./assets/js/poke-api.js"></script>
+    <script src="./assets/js/pokemon.js"></script>
+</body>
+</html>
